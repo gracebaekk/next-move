@@ -76,8 +76,8 @@ export function CarrierSetupForm({ onSuccess }: CarrierSetupFormProps) {
         {/* Company Information */}
         <div className="border-b border-gray-200 pb-6">
           <div className="flex items-center gap-2 mb-4">
-            <div className="w-8 h-8 bg-[#87B5DE] rounded-lg flex items-center justify-center">
-              <Building className="w-4 h-4 text-white" />
+            <div className="w-8 h-8 bg-[#d9f1fe] rounded-lg flex items-center justify-center">
+              <Building className="w-4 h-4 text-sky-600" />
             </div>
             <h2 className="text-2xl font-semibold text-gray-900">Company Information</h2>
           </div>
@@ -190,8 +190,8 @@ export function CarrierSetupForm({ onSuccess }: CarrierSetupFormProps) {
         {/* Contact Information */}
         <div className="border-b border-gray-200 pb-6">
           <div className="flex items-center gap-2 mb-4">
-            <div className="w-8 h-8 bg-[#87B5DE] rounded-lg flex items-center justify-center">
-              <User className="w-4 h-4 text-white" />
+            <div className="w-8 h-8 bg-[#d9f1fe] rounded-lg flex items-center justify-center">
+              <User className="w-4 h-4 text-sky-600" />
             </div>
             <h2 className="text-2xl font-semibold text-gray-900">Contact Information</h2>
           </div>
@@ -226,8 +226,8 @@ export function CarrierSetupForm({ onSuccess }: CarrierSetupFormProps) {
         {/* Additional Information */}
         <div>
           <div className="flex items-center gap-2 mb-4">
-            <div className="w-8 h-8 bg-[#87B5DE] rounded-lg flex items-center justify-center">
-              <FileText className="w-4 h-4 text-white" />
+            <div className="w-8 h-8 bg-[#d9f1fe] rounded-lg flex items-center justify-center">
+              <FileText className="w-4 h-4 text-sky-600" />
             </div>
             <h2 className="text-2xl font-semibold text-gray-900">Additional Information</h2>
           </div>

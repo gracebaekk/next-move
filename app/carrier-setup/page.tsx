@@ -36,8 +36,8 @@ export default function CarrierSetup() {
           {/* Benefits Section */}
           <div className="mt-12 grid md:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-              <div className="w-12 h-12 bg-[#87B5DE] rounded-lg flex items-center justify-center mb-3">
-                <Truck className="w-6 h-6 text-white" />
+              <div className="w-12 h-12 bg-[#d9f1fe] rounded-lg flex items-center justify-center mb-3">
+                <Truck className="w-6 h-6 text-sky-600" />
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">More Loads</h3>
               <p className="text-sm text-gray-600">
@@ -45,8 +45,8 @@ export default function CarrierSetup() {
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-              <div className="w-12 h-12 bg-[#87B5DE] rounded-lg flex items-center justify-center mb-3">
-                <CheckCircle className="w-6 h-6 text-white" />
+              <div className="w-12 h-12 bg-[#d9f1fe] rounded-lg flex items-center justify-center mb-3">
+                <CheckCircle className="w-6 h-6 text-sky-600" />
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">24/7 Support</h3>
               <p className="text-sm text-gray-600">
@@ -54,8 +54,8 @@ export default function CarrierSetup() {
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-              <div className="w-12 h-12 bg-[#87B5DE] rounded-lg flex items-center justify-center mb-3">
-                <FileText className="w-6 h-6 text-white" />
+              <div className="w-12 h-12 bg-[#d9f1fe] rounded-lg flex items-center justify-center mb-3">
+                <FileText className="w-6 h-6 text-sky-600" />
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">Easy Setup</h3>
               <p className="text-sm text-gray-600">

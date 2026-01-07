@@ -36,7 +36,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-700 hover:text-primary-600 font-medium transition-colors"
+                className="text-gray-700 hover:text-[#438ed9] font-medium transition-colors"
               >
                 {link.label}
               </Link>
@@ -46,7 +46,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMenu}
-            className="md:hidden p-2 text-gray-700 hover:text-primary-600"
+            className="md:hidden p-2 text-gray-700 hover:text-[#438ed9]"
             aria-label="Toggle menu"
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -61,7 +61,7 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-gray-700 hover:text-primary-600 font-medium transition-colors py-2"
+                  className="text-gray-700 hover:text-[#438ed9] font-medium transition-colors py-2"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}

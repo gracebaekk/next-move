@@ -42,8 +42,8 @@ export default function Home() {
           </h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="p-6 rounded-xl bg-gray-50 hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 bg-[#87B5DE] rounded-lg flex items-center justify-center mb-4">
-                <Truck className="w-6 h-6 text-white" />
+              <div className="w-12 h-12 bg-[#d9f1fe] rounded-lg flex items-center justify-center mb-4">
+                <Truck className="w-6 h-6 text-sky-600" />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-gray-900">Load Management</h3>
               <p className="text-gray-600">
@@ -51,8 +51,8 @@ export default function Home() {
               </p>
             </div>
             <div className="p-6 rounded-xl bg-gray-50 hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 bg-[#87B5DE] rounded-lg flex items-center justify-center mb-4">
-                <MapPin className="w-6 h-6 text-white" />
+              <div className="w-12 h-12 bg-[#d9f1fe] rounded-lg flex items-center justify-center mb-4">
+                <MapPin className="w-6 h-6 text-sky-600" />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-gray-900">Real-Time Tracking</h3>
               <p className="text-gray-600">
@@ -60,8 +60,8 @@ export default function Home() {
               </p>
             </div>
             <div className="p-6 rounded-xl bg-gray-50 hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 bg-[#87B5DE] rounded-lg flex items-center justify-center mb-4">
-                <TrendingUp className="w-6 h-6 text-white" />
+              <div className="w-12 h-12 bg-[#d9f1fe] rounded-lg flex items-center justify-center mb-4">
+                <TrendingUp className="w-6 h-6 text-sky-600" />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-gray-900">Logistics Consulting</h3>
               <p className="text-gray-600">
@@ -73,7 +73,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary-50">
+      <section className="py-20 bg-gradient-to-br from-primary-50 to-primary-100">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-4 text-gray-900">
             Ready to Optimize Your Dispatch Operations?

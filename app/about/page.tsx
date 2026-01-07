@@ -52,21 +52,19 @@ export default function About() {
             <h2 className="text-4xl font-bold text-center mb-8 text-gray-900">Built on Real Operational Experience</h2>
             <div className="prose prose-lg mx-auto text-gray-600">
               <p className="text-lg mb-4">
-                Next Move Global LLC provides comprehensive logistics solutions combining transportation 
-                coordination with hands-on consulting. We support importers, exporters, manufacturers, 
-                and distribution networks through trusted partners who deliver execution, reliability, 
-                and operational stability.
+                Next Move Global LLC is a consulting-led logistics partner. We combine transportation coordination with
+                hands-on supply chain consulting so importers, exporters, manufacturers, and distribution networks can
+                design, execute, and continuously improve resilient operations.
               </p>
               <p className="text-lg mb-4">
-                We&apos;ve built our reputation on reliability, transparency, and results. Our advanced
-                dispatch management system ensures that every load is handled with care, every route
-                is optimized, and every driver is supported. We&apos;re not just a dispatch service—we&apos;re
-                your partner in success.
+                Our CEO has 30+ years across global forwarding, trucking, drayage, and supply chain operations—including
+                building and leading their own trucking company end-to-end. The leadership team brings 20+ years of
+                operational depth in licensing, compliance, staffing, systems, carrier operations, and full P&amp;L responsibility.
               </p>
               <p className="text-lg">
-                Operating as a non-asset-based logistics company, we coordinate transportation services 
-                through licensed and insured third-party partners while providing logistics consulting 
-                to help customers design, execute, and continuously improve their supply chains.
+                Operating as a non-asset-based logistics company, we leverage licensed and insured partners while staying
+                your single point of coordination. We compete on execution: consulting-driven design, advanced dispatch and
+                planning, and on-the-ground accountability to keep factory and time-critical flows running.
               </p>
             </div>
           </div>
@@ -74,7 +72,7 @@ export default function About() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-primary-50">
+      <section className="py-20 bg-gradient-to-br from-primary-50 to-primary-100">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
             {stats.map((stat, index) => (
@@ -89,27 +87,8 @@ export default function About() {
         </div>
       </section>
 
-      {/* Leadership Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Leadership</h2>
-          <div className="max-w-3xl mx-auto">
-            <div className="bg-gray-50 rounded-xl p-8 text-center">
-              <p className="text-lg text-primary-600 font-semibold mb-4">Chief Executive Officer & Founder</p>
-              <p className="text-gray-600">
-                Seung Mun Baek brings over 30 years of experience across global forwarding, trucking, 
-                drayage, and supply chain operations in the United States and Korea. He has built and 
-                led logistics organizations from the ground up, overseeing licensing, compliance, staffing, 
-                systems, carrier operations, and full P&L responsibility while also supporting large-scale 
-                factory logistics, time-critical transportation, and nationwide distribution programs.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Values Section */}
-      <section className="py-20 bg-[#87B5DE]/10">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">What Sets Us Apart</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
@@ -117,8 +96,8 @@ export default function About() {
               const Icon = value.icon;
               return (
                 <div key={index} className="text-center p-6 rounded-xl bg-gray-50 hover:shadow-lg transition-shadow">
-                  <div className="w-16 h-16 bg-[#87B5DE] rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Icon className="w-8 h-8 text-white" />
+                  <div className="w-16 h-16 bg-[#d9f1fe] rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Icon className="w-8 h-8 text-sky-600" />
                   </div>
                   <h3 className="text-xl font-semibold mb-3 text-gray-900">{value.title}</h3>
                   <p className="text-gray-600">{value.description}</p>
@@ -138,15 +117,14 @@ export default function About() {
               {[
                 "24/7 dispatch support to handle your loads around the clock",
                 "Advanced technology platform for real-time tracking and management",
-                "30+ Years of Leadership Experience",
-                "20+ Years of Team Expertise",
+                "Experienced team with deep industry knowledge",
                 "Competitive rates and transparent pricing",
                 "Strong relationships with brokers and shippers",
                 "Single Point of Coordination",
               ].map((benefit, index) => (
                 <div key={index} className="flex items-start gap-4 bg-white p-6 rounded-lg shadow-sm">
-                  <div className="w-8 h-8 bg-[#87B5DE] rounded-full flex items-center justify-center flex-shrink-0">
-                    <CheckCircle className="w-5 h-5 text-white" />
+                  <div className="w-8 h-8 bg-[#d9f1fe] rounded-full flex items-center justify-center flex-shrink-0">
+                    <CheckCircle className="w-5 h-5 text-sky-600" />
                   </div>
                   <p className="text-lg text-gray-700">{benefit}</p>
                 </div>
