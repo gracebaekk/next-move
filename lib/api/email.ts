@@ -66,7 +66,7 @@ export async function sendEmailViaResend(params: {
   subject: string;
   html: string;
   replyTo?: string;
-}): Promise<{ success: boolean; error?: string }> {
+}): Promise<{ success: boolean; error?: string; emailId?: string }> {
   try {
     if (!process.env.RESEND_API_KEY) {
       console.error('RESEND_API_KEY is not configured. Email cannot be sent.');
