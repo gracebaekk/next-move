@@ -14,8 +14,11 @@ export async function POST(request: NextRequest) {
     }
 
     // Send email
-    const recipientEmail = process.env.CONTACT_EMAIL || process.env.CARRIER_SETUP_EMAIL || 'your-email@example.com';
-    const fromEmail = process.env.FROM_EMAIL || 'onboarding@resend.dev';
+    const recipientEmail = process.env.CONTACT_EMAIL || process.env.CARRIER_SETUP_EMAIL || 'op@nextmoglobal.com';
+    // Use your verified domain email
+    const fromEmail = process.env.FROM_EMAIL || 'op@nextmoglobal.com';
+
+    console.log('Sending email - From:', fromEmail, 'To:', recipientEmail);
 
     const emailResult = await sendEmailViaResend({
       to: recipientEmail,

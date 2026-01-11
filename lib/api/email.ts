@@ -1,3 +1,4 @@
+import { Resend } from "resend";
 import { ContactFormData, CarrierSetupFormData } from "../types";
 
 export function generateContactEmailHtml(data: ContactFormData): string {
@@ -60,7 +61,7 @@ export function generateCarrierSetupEmailHtml(data: CarrierSetupFormData): strin
 }
 
 export async function sendEmailViaResend(params: {
-  to: string;
+  to: string | string[];
   from: string;
   subject: string;
   html: string;
@@ -68,24 +69,57 @@ export async function sendEmailViaResend(params: {
 }): Promise<{ success: boolean; error?: string }> {
   try {
     if (!process.env.RESEND_API_KEY) {
-      console.log('No RESEND_API_KEY found. Email would be sent:', params.subject);
-      console.log('To enable email, set up Resend. See EMAIL_SETUP.md for instructions.');
-      return { success: true };
+      console.error('RESEND_API_KEY is not configured. Email cannot be sent.');
+      console.log('Email would be sent to:', params.to);
+      console.log('Subject:', params.subject);
+      return { success: false, error: 'Email service not configured. Please set RESEND_API_KEY environment variable.' };
     }
 
-    const { Resend } = require('resend');
     const resend = new Resend(process.env.RESEND_API_KEY);
 
-    const { error } = await resend.emails.send(params);
+    const emailParams: {
+      from: string;
+      to: string | string[];
+      subject: string;
+      html: string;
+      reply_to?: string;
+    } = {
+      from: params.from,
+      to: params.to,
+      subject: params.subject,
+      html: params.html,
+    };
+
+    if (params.replyTo) {
+      emailParams.reply_to = params.replyTo;
+    }
+
+    console.log('Attempting to send email with params:', {
+      from: emailParams.from,
+      to: emailParams.to,
+      reply_to: emailParams.reply_to,
+      subject: emailParams.subject
+    });
+
+    const { data, error } = await resend.emails.send(emailParams);
 
     if (error) {
       console.error('Resend error:', error);
-      return { success: false, error: 'Failed to send email' };
+      return { success: false, error: error.message || 'Failed to send email' };
     }
 
-    return { success: true };
+    console.log('Email sent successfully:', data?.id);
+    console.log('Email details:', {
+      id: data?.id,
+      to: emailParams.to,
+      from: emailParams.from,
+      subject: emailParams.subject
+    });
+    
+    return { success: true, emailId: data?.id };
   } catch (error) {
     console.error('Error sending email:', error);
-    return { success: false, error: 'Failed to send email' };
+    const errorMessage = error instanceof Error ? error.message : 'Failed to send email';
+    return { success: false, error: errorMessage };
   }
 }

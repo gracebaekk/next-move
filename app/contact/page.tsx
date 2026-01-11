@@ -39,7 +39,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                    <p className="text-gray-600">(714) 742-7730</p>
+                    <p className="text-gray-600">(714) 357-6708</p>
                     <p className="text-sm text-gray-500 mt-1">24/7 Dispatch Line</p>
                   </div>
                 </div>
@@ -53,7 +53,6 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">General Inquiries</h3>
                     <p className="text-gray-600">op@nextmoglobal.com</p>
-                    <p className="text-sm text-gray-500 mt-1">General inquiries</p>
                   </div>
                 </div>
               </div>

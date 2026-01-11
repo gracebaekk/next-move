@@ -24,12 +24,31 @@ A modern, professional truck dispatch management system built with Next.js, Type
 npm install
 ```
 
-2. Run the development server:
+2. Create a `.env.local` file in the root directory with the following environment variables:
+```bash
+# Resend API Key (required for email sending)
+RESEND_API_KEY=re_your_api_key_here
+
+# Email Configuration
+FROM_EMAIL=onboarding@resend.dev
+CONTACT_EMAIL=your-email@example.com
+CARRIER_SETUP_EMAIL=your-email@example.com
+```
+
+   To get a Resend API key:
+   1. Sign up at [https://resend.com](https://resend.com)
+   2. Create an API key in the dashboard
+   3. Copy the API key to your `.env.local` file
+   4. Replace `your-email@example.com` with your actual email address
+
+   **Note for Vercel deployment:** Add these environment variables in your Vercel project settings under Settings → Environment Variables.
+
+3. Run the development server:
 ```bash
 npm run dev
 ```
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Project Structure
 
