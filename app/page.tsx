@@ -49,7 +49,7 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
             Everything You Need to Manage Your Fleet
           </h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="p-6 rounded-xl bg-gray-50 hover:shadow-lg transition-shadow">
               <div className="w-12 h-12 bg-[#d9f1fe] rounded-lg flex items-center justify-center mb-4">
                 <Truck className="w-6 h-6 text-sky-600" />
@@ -66,6 +66,15 @@ export default function Home() {
               <h3 className="text-xl font-semibold mb-2 text-gray-900">Real-Time Tracking</h3>
               <p className="text-gray-600">
                 Monitor your trucks and drivers with live GPS tracking and location updates.
+              </p>
+            </div>
+            <div className="p-6 rounded-xl bg-gray-50 hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-[#d9f1fe] rounded-lg flex items-center justify-center mb-4">
+                <BarChart3 className="w-6 h-6 text-sky-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-gray-900">Logistics Consulting</h3>
+              <p className="text-gray-600">
+                Container flow analysis, network design, and supply chain optimization.
               </p>
             </div>
           </div>

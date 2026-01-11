@@ -1,4 +1,5 @@
-import { Truck, Users, Award, Target, CheckCircle, Clock, Shield, Eye, BarChart3, Factory, DollarSign } from "lucide-react";
+import Link from "next/link";
+import { Truck, Users, Award, Target, CheckCircle, Clock, Shield, Eye, BarChart3, Factory, DollarSign, ArrowRight } from "lucide-react";
 
 export default function About() {
   const services = [
@@ -70,7 +71,7 @@ export default function About() {
                   </li>
                 </ul>
               </div>
-              <p className="text-lg font-semibold text-gray-900">
+              <p className="text-lg font-semibold text-gray-900 text-center">
                 We are not lowering expectations. We are raising the standard.
               </p>
             </div>
@@ -79,7 +80,7 @@ export default function About() {
       </section>
 
       {/* Service Portfolio */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-8 text-gray-900">Our Service Portfolio</h2>
@@ -108,7 +109,7 @@ export default function About() {
       </section>
 
       {/* Logistics Consulting Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-8 text-gray-900">Logistics Consulting</h2>
@@ -134,7 +135,7 @@ export default function About() {
               </div>
             </div>
             <p className="text-lg text-gray-600 text-center">
-              Our consulting is execution-focused, not report-driven. We work only on improvements that can be realistically implemented.
+              Our consulting is <strong>execution-focused,</strong> not report-driven. We work only on improvements that can be <strong>realistically implemented.</strong>
             </p>
           </div>
         </div>
@@ -221,6 +222,36 @@ export default function About() {
               <p className="text-gray-700">
                 We support industries where execution quality is critical and understand the risks that delays or safety failures can pose to operations.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Banner */}
+      <section className="bg-gradient-to-br from-primary-600 to-primary-900 text-white py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Ready to Work With Us?
+            </h2>
+            <p className="text-xl md:text-2xl mb-8 text-primary-100">
+              Let&apos;s discuss how Next Move Global can support your logistics needs.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/carrier-setup"
+                className="bg-white text-[#438ed9] px-8 py-3 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-200 inline-flex items-center justify-center gap-2"
+              >
+                Get Started
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+              <Link
+                href="/contact"
+                className="bg-[#438ed9] text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-200 inline-flex items-center justify-center gap-2"
+              >
+                Contact Us
+                <ArrowRight className="w-5 h-5" />
+              </Link>
             </div>
           </div>
         </div>
