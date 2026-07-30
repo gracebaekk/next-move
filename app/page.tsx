@@ -108,8 +108,8 @@ export default function Home() {
                 ))}
               </div>
               <div className="mt-6 text-center">
-                <a href="mailto:op@nextmoveglobal.com" className="text-primary-600 hover:text-primary-700 font-semibold text-lg">
-                  📧 op@nextmoveglobal.com
+                <a href="mailto:op@nextmoglobal.com" className="text-primary-600 hover:text-primary-700 font-semibold text-lg">
+                  📧 op@nextmoglobal.com
                 </a>
               </div>
             </div>
